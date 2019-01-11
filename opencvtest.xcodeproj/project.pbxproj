@@ -225,6 +225,7 @@
 				56A9A11A21E87C630088B35A /* Sources */,
 				56A9A11B21E87C630088B35A /* Frameworks */,
 				56A9A11C21E87C630088B35A /* CopyFiles */,
+				563549DE21E8907800D3A263 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -271,6 +272,23 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		563549DE21E8907800D3A263 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PROJECT_DIR}/copy_apps_into_executables.sh\n";
+		};
 		56A9A14121E88B030088B35A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
