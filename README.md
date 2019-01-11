@@ -41,6 +41,31 @@
 
 ---
 
+## How to use executables
+
+#### segmentation
+
+- Before build binary file, download configuration file `fcn8s-heavy-pascal.prototxt` and learned model `fcn8s-heavy-pascal.caffemodel`. Then place them under `/opencvtest/assets/`.
+
+  - [caffemodel](http://dl.caffe.berkeleyvision.org/fcn8s-heavy-pascal.caffemodel)
+  - [prototxt](https://github.com/opencv/opencv_extra/blob/master/testdata/dnn/fcn8s-heavy-pascal.prototxt)
+
+- Invoke this executable binary file with arguments in Terminal app to test semantic segmentation, like...
+
+- ```script
+  $ ./segmentation --model=fcn8s-heavy-pascal.caffemodel --mean=0 0 0 --rgb=0 --config=fcn8s-heavy-pascal.prototxt --width=500 --height=500 --input=xxx.jpg
+  ```
+
+  - `--input` can be empty, then camera will start to capture. You can specify camera with `--device` parameter. 
+  - `--input` can also be video file format.
+  - To use GPU, specify `--target`parameter.
+
+- For example
+
+  - ![segmentation sample](./assets/segmentation.png)
+
+---
+
 
 
 ## License

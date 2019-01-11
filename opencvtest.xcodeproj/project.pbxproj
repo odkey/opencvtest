@@ -51,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		563549E121E8AFF100D3A263 /* models.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = models.yml; sourceTree = "<group>"; };
+		563549E321E8B04B00D3A263 /* copy_assets.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = copy_assets.sh; sourceTree = "<group>"; };
 		56A9A0E621E779340088B35A /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
 		56A9A0E821E779420088B35A /* libcblas.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcblas.tbd; path = usr/lib/libcblas.tbd; sourceTree = SDKROOT; };
 		56A9A0EA21E779600088B35A /* liblapack.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblapack.tbd; path = usr/lib/liblapack.tbd; sourceTree = SDKROOT; };
@@ -112,6 +114,22 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		563549E021E8AFCE00D3A263 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				563549E121E8AFF100D3A263 /* models.yml */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		563549E221E8B02400D3A263 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				563549E321E8B04B00D3A263 /* copy_assets.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 		56A9A0E121E778E60088B35A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				56A9A10B21E87A430088B35A /* src */,
+				563549E221E8B02400D3A263 /* scripts */,
 			);
 			path = segmentation;
 			sourceTree = "<group>";
@@ -189,6 +208,7 @@
 		56B972A221E7552C008F45CE /* opencvtest */ = {
 			isa = PBXGroup;
 			children = (
+				563549E021E8AFCE00D3A263 /* assets */,
 				56A9A14221E88B950088B35A /* copy_apps_into_executables.sh */,
 				56A9A10921E87A430088B35A /* apps */,
 				56A9A10721E87A430088B35A /* common */,
@@ -312,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PROJECT_DIR}/copy_apps_into_executables.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PROJECT_DIR}/copy_apps_into_executables.sh\n\n${PROJECT_DIR}/opencvtest/apps/segmentation/scripts/copy_assets.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

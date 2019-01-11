@@ -1,5 +1,7 @@
 .DS_Store
 
+opencvtest/assets/fcn8s-heavy-pascal.*
+
 opencvtest/lib/**/*
 
 opencvtest/.build/**/*
