@@ -16,16 +16,16 @@
 
 #### Dependencies
 
-- Build OpenCV framework from [here](https://github.com/opencv/opencv) (if you needs contribute algorithm, check also [here](https://github.com/opencv/opencv_contrib)) , and place built framework (named "opencv2.framework") in `path/to/project/opencvtest/lib` .
+- Build OpenCV framework from [here](https://github.com/opencv/opencv) (if you needs contribute algorithm, also check [here](https://github.com/opencv/opencv_contrib)) , and place a built framework (named "opencv2.framework") in `path/to/project/opencvtest/lib` .
 
-#### Build sources
+#### Building sources
 
-- Build sources in Xcode. There some kinds of sample targets. You can choise it you like from scheme selector in Xcode, and build it. 
-- Binary files will be output in the directory `path/to/project/executables`. This automation is depends on the script file `copy_apps_into_executables.sh`, so you should edit it.
+- Build sources in Xcode. There are some kinds of sample targets. You can choose one sample you like from scheme selector in Xcode, and build it. 
+- Binary files will be output in the directory `path/to/project/executables`. This automation is depends on the script file `copy_apps_into_executables.sh`, so you shouldn't edit it.
 
 #### Executing
 
-- Binary files which is output in `/executables` directory, can be executed using your Terminal app.  Arguments are necessary at almost all executables. Follow help message or OpenCV document.
+- Binary files, which is output in `/executables` directory, can be executed using your Terminal app.  Arguments are necessary at almost all executables. Follow help message or OpenCV document.
 
 ---
 
