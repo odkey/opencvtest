@@ -104,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		563549DF21E8ABA100D3A263 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				56A9A12021E87C630088B35A /* main.cc */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		56A9A0E121E778E60088B35A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +163,7 @@
 		56A9A11F21E87C630088B35A /* objectdetection */ = {
 			isa = PBXGroup;
 			children = (
-				56A9A12021E87C630088B35A /* main.cc */,
+				563549DF21E8ABA100D3A263 /* src */,
 			);
 			path = objectdetection;
 			sourceTree = "<group>";
